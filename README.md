@@ -1,5 +1,4 @@
-# Monkey Interpreter in C++
-### SOC 2024 — Final Project
+# Interpreter in C++
 
 A tree-walking interpreter for the Monkey programming language, built from scratch in C++ using Flex and Bison.
 
