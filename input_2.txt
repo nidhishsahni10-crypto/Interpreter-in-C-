@@ -1,0 +1,26 @@
+a=true?1:2;
+
+let newAdder = fn(x) {
+  return fn(y) { x + y; };
+};
+
+let addTwo = newAdder(2);
+let c=addTwo(3);
+
+let newnewAdder = fn(a, b) {
+    fn(c) { a + b + c; };
+};
+
+let adder = newnewAdder(1, 2);
+
+let b=adder(8); 
+
+let twice = fn(f, x) {
+  return f(f(x));
+};
+
+let addTwo = fn(x) {
+  return x + 2;
+};
+
+twice(addTwo, 2);
